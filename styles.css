@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -6,15 +6,15 @@
 }
 
 /* Header */
-.header{
+.header {
     width: 100%;
     height: 75px;
-    background-color: #daeaf1; /* Slightly darker blue for header */
+    background-color: #2C7A7B; /* Teal */
     display: flex;
     padding: 0% 5%;
     justify-content: space-between;
 }
-.logo{
+.logo {
     width: 10%;
     height: 75px;
     display: flex;
@@ -22,14 +22,15 @@
     align-items: center;
     font-size: 30px;
     font-weight: 500;
+    color: white;
 }
-.nav{
+.nav {
     width: 20%;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
-.nav-links{
+.nav-links {
     width: 100%;
     list-style-type: none;
     display: flex;
@@ -38,19 +39,25 @@
     font-size: 18px;
     font-weight: 400;
     cursor: pointer;
-    color: #0077B6; /* Deep blue for links */
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+.nav-links a:hover {
+    color: #E53E3E; /* Vibrant red on hover */
 }
 
 /* Banner */
-.banner{
+.banner {
     height: 700px;
     width: 100%;
-    background-color: #effafc;
+    background-color: #F7FAFC; /* Light Grayish Blue */
     padding: 30px 5%;
     display: flex;
     align-items: center;
 }
-.details{
+.details {
     font-family: "Montserrat", sans-serif;
     width: 80%;
     height: 400px;
@@ -60,52 +67,49 @@
     align-items: flex-start;
     row-gap: 20px;
 }
-.intro{
+.intro {
     font-size: 50px;
     font-weight: 200;
-    color: #44576d; /* Dark Blue-Grey for intro text */
+    color: #1A202C; /* Dark Charcoal for readable text */
 }
-.name{
+.name {
     font-size: 60px;
     font-weight: 700;
-    color: #0077B6; /* Accent deep blue */
+    color: #3182CE; /* Vibrant blue for name */
 }
-.desc{ 
+.desc {
     font-size: 20px;
-    color: #2a2a2c; /* Dark grey for description */
+    color: #2D3748; /* Dark Gray for descriptions */
 }
-.ctm{
+.ctm {
     padding: 10px 15px;
     color: white;
-    background-color: #0077B6; /* Deep blue for button */
-    border: 2px solid #0077B6;
+    background-color: #3182CE; /* Vibrant Blue Button */
+    border: none;
     border-radius: 5px;
     cursor: pointer;
 }
-.ctm:hover{
-    background-color: transparent;
-    color: #0077B6;
-    border-color: #0077B6;
-    transition: .2s;
+.ctm:hover {
+    background-color: #2B6CB0; /* Darker blue on hover */
 }
 
 /* Profile Image */
-.profile{
+.profile {
     padding: 0 30px;
 }
-#pic{
+#pic {
     width: 400px;
     border-radius: 20%;
 }
 
 /* Description Section */
-.discription{
+.discription {
     width: 100%;
     height: 500px;
     padding: 30px 0px;
-    background-color: #b7dec8; /* Slightly richer green for About Me section */
+    background-color: #38B2AC; /* Light Teal */
 }
-.about{
+.about {
     width: 75%;
     margin: 0px auto;
     padding: 30px 40px 60px 40px;
@@ -114,28 +118,28 @@
     justify-content: center;
     align-items: flex-start;
 }
-.t1{
+.t1 {
     font-size: 30px;
     font-weight: 500;
-    color: #0077B6; /* Accent deep blue for section titles */
+    color: #2C7A7B; /* Dark Teal for section headings */
     margin: 40px 0px 30px 0px;
 }
-.info{
-    font-size: 18px; /* Reduced font size for better mobile view */
-    color: #2a2a2c; /* Dark grey for improved readability */
+.info {
+    font-size: 18px; /* Smaller font for mobile compatibility */
+    color: white;
     padding: 8px;
 }
 
 /* Section 3 (Education and Skills) */
-.section-3{
+.section-3 {
     height: 500px;
-    background-color: #dfebf6; /* Light Blue */
+    background-color: #E2E8F0; /* Light Gray background */
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 50px 30px;
 }
-.education, .skills{
+.education, .skills {
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -145,45 +149,44 @@
     font-size: 20px;
     padding: 50px;
     border-radius: 20px;
-    box-shadow: 2px 2px 5px #779384;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
-.edu-title, .skills-title{
+.edu-title, .skills-title {
     font-size: 30px;
     font-weight: 500;
-    color: #0077B6; /* Accent deep blue for section titles */
+    color: #2C7A7B; /* Teal for titles */
     margin-bottom: 15px;
 }
-.edu, .skill-list li{
+.edu, .skill-list li {
     font-size: 22px;
     font-weight: 450;
-    color: #2a2a2c;
+    color: #2D3748; /* Dark Gray for text */
 }
-li{
+li {
     margin: 5px 20px;
 }
 
 /* Contact Section */
-.contactme{
+.contactme {
     width: 100%;
     padding: 10px;
-    background-color: #c0c8db; /* Restored original light gray-blue */
+    background-color: #2C7A7B; /* Teal for contact section */
 }
-.contact-banner{
+.contact-banner {
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.cnt{
+.cnt {
     font-size: 30px;
     font-weight: 500;
-    color: #44576d; /* Dark Blue-Grey for contact heading */
+    color: white;
 }
-a{
+a {
     text-decoration: none;
-    color: #0077B6; /* Accent deep blue for contact links */
+    color: white;
 }
-
-a:hover{
-    color: #FF6F61; /* Coral color on hover */
+a:hover {
+    color: #E53E3E; /* Vibrant red on hover */
 }
